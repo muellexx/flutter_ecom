@@ -1,0 +1,1 @@
+This project is about making an ecom application with flutter.
