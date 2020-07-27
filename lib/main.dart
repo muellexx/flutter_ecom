@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 
 import 'package:flutter_ecom/components/horizontal_listview.dart';
+import 'package:flutter_ecom/components/products.dart';
 
 void main(){
   runApp(
@@ -129,7 +130,18 @@ class _HomePageState extends State<HomePage> {
             padding: const EdgeInsets.all(8.0),
             child: new Text('Categories'),
           ),
+
           HorizontalList(),
+
+          new Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: new Text('Recent Products'),
+          ),
+
+          Container(
+            height: 320.0,
+            child: Products(),
+          )
         ],
       ),
     );
